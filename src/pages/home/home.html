@@ -1,14 +1,425 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Quiz App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content >
+
+<div *ngIf ="app" id="pic">
+
+
+    <h1>Quiz App</h1>
+
+    <button ion-button (click)="clicks()">Start</button>
+
+</div>
+
+
+ <div *ngIf= "computer" id="glo">
+
+    <h1> About Computer</h1>
+
+    <div class="container">
+      <img src="../../assets/imgs/123.jpg" >
+     
+    </div>
+
+    <ion-item>
+
+ <ion-label floating> Which of the following will you require to hear music on your computer?</ion-label>
+ <ion-input type=" text"[(ngModel)]="name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Sound Card</ion-label>
+  <ion-checkbox [(ngModel)]="image"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> Video Card</ion-label>
+  <ion-checkbox [(ngModel)]="audio"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> Mouse</ion-label>
+  <ion-checkbox [(ngModel)]="office"></ion-checkbox>
+</ion-item>
+
+
+<ion-item>
+  <ion-label floating>  USB  stands for Universal Serial BUS</ion-label>
+  <ion-input type=" text"[(ngModel)]="name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label> True</ion-label>
+  <ion-checkbox [(ngModel)]="Serial"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> False</ion-label>
+  <ion-checkbox [(ngModel)]="unlimutted"></ion-checkbox>
+</ion-item>
+
+
+<ion-item>
+
+  <ion-label floating>  keyboard is not an output device</ion-label>
+  <ion-input type=" text"[(ngModel)]="name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label>  True</ion-label>
+  <ion-checkbox [(ngModel)]="mb"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> False</ion-label>
+  <ion-checkbox [(ngModel)]="kb"></ion-checkbox>
+</ion-item>
+
+
+
+<ion-item>
+
+  <ion-label floating> C++ is a Programming Language</ion-label>
+  <ion-input type=" text"[(ngModel)]="name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label> True</ion-label>
+  <ion-checkbox [(ngModel)]="tru"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label> False</ion-label>
+  <ion-checkbox [(ngModel)]="fal"></ion-checkbox>
+</ion-item>
+
+
+<ion-item>
+
+  <ion-label floating> Physical components that make up your computer are known as</ion-label>
+  <ion-input type=" text"[(ngModel)]="name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label>  Software </ion-label>
+  <ion-checkbox [(ngModel)]="analyst"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Hardware</ion-label>
+  <ion-checkbox [(ngModel)]="programmer"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>None of the Above</ion-label>
+  <ion-checkbox [(ngModel)]="none"></ion-checkbox>
+</ion-item>
+<div class="btn">
+<button ion-button (click)="clickn()">next</button>
+</div>
+</div>
+
+
+
+<div *ngIf="music" id = "mus">
+<h1> About Animals</h1>
+
+<div class="container">
+  <img src="../../assets/imgs/animals.jpg" >
+ 
+</div>
+
+<ion-item>
+
+    <ion-label floating>A female elephants  are called cows</ion-label>
+    <ion-input type=" text"[(ngModel)]="name"></ion-input>
+   </ion-item>
+
+ <ion-item>
+    <ion-label>True</ion-label>
+    <ion-checkbox [(ngModel)]="ele"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>false</ion-label>
+    <ion-checkbox [(ngModel)]="phant"></ion-checkbox>
+  </ion-item>
+
+
+  <ion-item>
+
+      <ion-label floating> Is a dolphin a mammal?</ion-label>
+      <ion-input type=" text"[(ngModel)]="name"></ion-input>
+     </ion-item>
+  
+   <ion-item>
+      <ion-label>Yes</ion-label>
+      <ion-checkbox [(ngModel)]="dol"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>No</ion-label>
+      <ion-checkbox [(ngModel)]="phin"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+
+        <ion-label floating> Snakes have slimy skin.</ion-label>
+        <ion-input type=" text"[(ngModel)]="name"></ion-input>
+       </ion-item>
+    
+     <ion-item>
+        <ion-label>True</ion-label>
+        <ion-checkbox [(ngModel)]="sna"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>False</ion-label>
+        <ion-checkbox [(ngModel)]="kes"></ion-checkbox>
+      </ion-item>
+
+
+      <ion-item>
+
+          <ion-label floating> giraffe is the tallest animal in the world</ion-label>
+          <ion-input type=" text"[(ngModel)]="name"></ion-input>
+         </ion-item>
+      
+       <ion-item>
+          <ion-label>True</ion-label>
+          <ion-checkbox [(ngModel)]="gira"></ion-checkbox>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>False</ion-label>
+          <ion-checkbox [(ngModel)]="ffe"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+
+            <ion-label floating>  Groups of lions are known as what?</ion-label>
+            <ion-input type=" text"[(ngModel)]="name"></ion-input>
+           </ion-item>
+        
+         <ion-item>
+            <ion-label>prides</ion-label>
+            <ion-checkbox [(ngModel)]="lio"></ion-checkbox>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Animals</ion-label>
+            <ion-checkbox [(ngModel)]="one"></ion-checkbox>
+          </ion-item>
+
+ 
+<div class="btn">
+   <button ion-button (click)="clicknn()">Next</button>
+  </div>
+  </div>
+
+
+  <div *ngIf= "general" id="gen">
+
+<h1>About South Africa</h1>
+
+<div class="container">
+  <img src="../../assets/imgs/sa.jpg" >
+ 
+</div>
+
+
+
+<ion-item>
+
+    <ion-label floating>The president of SA is Robert Mugabe</ion-label>
+    <ion-input type=" text"[(ngModel)]="name"></ion-input>
+   </ion-item>
+
+   <ion-item>
+      <ion-label> True</ion-label>
+      <ion-checkbox [(ngModel)]="truu"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label> False</ion-label>
+      <ion-checkbox [(ngModel)]="fals"></ion-checkbox>
+  
+    </ion-item>
+
+
+
+    
+<ion-item>
+
+  <ion-label floating>what did SA host in 2010</ion-label>
+  <ion-input type=" text"[(ngModel)]="name"></ion-input>
+ </ion-item>
+
+ <ion-item>
+    <ion-label> world cup</ion-label>
+    <ion-checkbox [(ngModel)]="cup"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label> olympics</ion-label>
+    <ion-checkbox [(ngModel)]="oly"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> world series</ion-label>
+    <ion-checkbox [(ngModel)]="ser"></ion-checkbox>
+  </ion-item>
+
+
+  <ion-item>
+
+    <ion-label floating>what is SA often called</ion-label>
+    <ion-input type=" text"[(ngModel)]="name"></ion-input>
+   </ion-item>
+  
+   <ion-item>
+      <ion-label> kenya</ion-label>
+      <ion-checkbox [(ngModel)]="kenya"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label> zimbabwe</ion-label>
+      <ion-checkbox [(ngModel)]="zim"></ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label> Rainbow Nation</ion-label>
+      <ion-checkbox [(ngModel)]="rain"></ion-checkbox>
+    </ion-item>
+
+
+    <ion-item>
+
+      <ion-label floating>who was elected president in 1994</ion-label>
+      <ion-input type=" text"[(ngModel)]="name"></ion-input>
+     </ion-item>
+    
+     <ion-item>
+        <ion-label> Thabo Mbeki</ion-label>
+        <ion-checkbox [(ngModel)]="mbeki"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label> Nelson Mandela</ion-label>
+        <ion-checkbox [(ngModel)]="mandela"></ion-checkbox>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label> jacob Zuma</ion-label>
+        <ion-checkbox [(ngModel)]="zuma"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item>
+
+        <ion-label floating>How many official language are spoken in SA</ion-label>
+        <ion-input type=" text"[(ngModel)]="name"></ion-input>
+       </ion-item>
+      
+       <ion-item>
+          <ion-label> 23</ion-label>
+          <ion-checkbox [(ngModel)]="how"></ion-checkbox>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label> 18</ion-label>
+          <ion-checkbox [(ngModel)]="many"></ion-checkbox>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label> more than 11</ion-label>
+          <ion-checkbox [(ngModel)]="lang"></ion-checkbox>
+        </ion-item>
+      
+  
+
+
+
+
+
+<div class="btn">
+    <button ion-button (click)="clic()">score</button>
+  </div>
+  </div>
+
+  <div text-center  *ngIf = "scores" id = "sco" >
+    
+      <div class="container">
+          <img src="../../assets/imgs/Score-Card.png" >
+         
+      </div>
+    
+   
+         <h2>score: {{score}} /15</h2><br><br>
+       
+
+         <h2>CORRECT ANSWERS</h2><br><br>
+         <h3>About Computer</h3><br>
+         
+<p>Image file</p>
+<p>True</p>
+<p>True</p>
+<p>True</p>
+<p>programmer</p>
+
+
+<h3>General Questions</h3><br>
+
+
+<p>True</p>
+<p>Yes</p>
+<P>False</P>
+<p>True</p>
+<p>prides</p>
+
+
+<h3>About SA</h3><br>
+
+
+<p>False</p>
+<p>world cup</p>
+<p>Rainbow Nation</p>
+<p>Nelson Mandela</p>
+<p>more than 11</p>
+
+
+
+<div class="btn">
+    <button ion-button (click)="clica()">Start Again</button>
+  </div>
+
+
+
+      
+
+
+  </div>
+
+
+
+
+
+  
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+
 </ion-content>

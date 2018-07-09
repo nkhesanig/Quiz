@@ -1,3 +1,69 @@
 page-home {
 
+  #pic {
+
+        background-image: url('../../assets/imgs/un.png');
+        background-repeat: no-repeat;
+        background-position:  center center;
+            background-size:contain;
+            height: 100%;
+            
+
+            button{
+    position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      background-color:rgb(62, 147, 175);
+            }
+            background-color:rgb(170, 214, 231);
+
+
+    } 
+
+    ion-title{
+        background-color:rgb(170, 214, 231) ;
+        text-align: center;
+        
+    }
+
+    h1{
+        text-align: center;
+        font-style: initial;
+    }
+   .btn{
+       button{
+    background-color:rgb(62, 147, 175);
+    position: absolute;
+   
+    left: 50%;
+    transform: translateX(-50%);
+  background-color:rgb(62, 147, 175);
+    
+      }
+
+
+
+      .sko{
+          background-color: lightblue;
+          font: 1em sans-serif;
+         
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+    }
+
+   
+       
+    
+    
+
+    
+ 
+   
 }
